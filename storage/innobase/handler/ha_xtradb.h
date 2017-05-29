@@ -84,7 +84,7 @@ static my_bool srv_use_stacktrace;
 
 static const char innodb_deprecated_msg[]= "Using %s is deprecated and the"
 		" parameter may be removed in future releases."
-		" Ignoning the parameter.";
+		" Ignoring the parameter.";
 
 
 #ifdef BTR_CUR_HASH_ADAPT
@@ -780,7 +780,7 @@ innodb_print_deprecation(const char* param)
 {
 	ib::warn() << "Using " << param << " is deprecated and the"
 		" parameter may be removed in future releases."
-		" Ignoning the parameter.";
+		" Ignoring the parameter.";
 }
 
 /** Check if user has used xtradb extended system variable that
